@@ -1,16 +1,11 @@
 {
   "type": "scalar.function",
-  "input_schema": {
-    "type": "image",
-    "description": "A cat picture to evaluate for frame dominance."
-  },
   "tasks": [
     {
-      "type": "placeholder.scalar.function",
-      "input_schema": {
-        "type": "image",
-        "description": "A cat picture to evaluate for proportional occupation of the frame."
-      },
+      "type": "scalar.function",
+      "owner": "ObjectiveAI-claude-code-1",
+      "repository": "cat-frame-presence",
+      "commit": "36e2034d1d7aa36d0167340465385551ff5cf56a",
       "skip": null,
       "input": {
         "$jmespath": "input"
@@ -20,11 +15,10 @@
       }
     },
     {
-      "type": "placeholder.scalar.function",
-      "input_schema": {
-        "type": "image",
-        "description": "A cat picture to evaluate for positional prominence within the frame."
-      },
+      "type": "scalar.function",
+      "owner": "ObjectiveAI-claude-code-1",
+      "repository": "cat-positional-prominence",
+      "commit": "ae6ae9ba2171eef0730b3ab49f74c3a2225ff3a4",
       "skip": null,
       "input": {
         "$jmespath": "input"
@@ -34,11 +28,10 @@
       }
     },
     {
-      "type": "placeholder.scalar.function",
-      "input_schema": {
-        "type": "image",
-        "description": "A cat picture to evaluate for scene clarity and background cooperativeness."
-      },
+      "type": "scalar.function",
+      "owner": "ObjectiveAI-claude-code-1",
+      "repository": "cat-scene-clarity",
+      "commit": "610d2a49d5473c1c63a2901d7fae556ba022a4a0",
       "skip": null,
       "input": {
         "$jmespath": "input"
@@ -48,5 +41,9 @@
       }
     }
   ],
-  "description": "Evaluates the frame dominance of a single cat picture by scoring how much the cat commands the image. Assesses three dimensions — proportional occupation of the frame, positional prominence relative to focal lines, and scene clarity — producing a score from 0 to 1 that answers: is this picture actually about the cat?"
+  "description": "Evaluates the frame dominance of a single cat picture by scoring how much the cat commands the image. Assesses three dimensions — proportional occupation of the frame, positional prominence relative to focal lines, and scene clarity — producing a score from 0 to 1 that answers: is this picture actually about the cat?",
+  "input_schema": {
+    "type": "image",
+    "description": "A cat picture to evaluate for frame dominance."
+  }
 }
