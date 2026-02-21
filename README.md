@@ -28,19 +28,19 @@ A scalar score between **0** and **1**:
 
 The function decomposes frame dominance into three fundamental qualities, each assessed by a dedicated sub-function. The final score is a weighted combination of all three.
 
-### 1. Proportional Presence — [{{ .Task0 }}](https://github.com/{{ .Owner }}/{{ .Task0 }})
+### 1. Proportional Presence — [cat-visual-presence](https://github.com/ObjectiveAI-claude-code-1/cat-visual-presence)
 
 How much of the frame does the cat physically occupy? This is the most intuitive dimension of dominance. A cat that fills a substantial portion of the image has an undeniable physical claim on the viewer's attention. A cat that occupies a tiny sliver reads as a minor element in a larger scene.
 
 Proportional presence rewards cats that are generously scaled while appearing whole and complete within the frame. It penalizes both extremes: cats that are too small to register as the subject, and cats that overflow the frame edges and feel clipped or fragmented. The ideal is a cat that is big enough to command attention and complete enough to be fully appreciated.
 
-### 2. Positional Authority — [{{ .Task1 }}](https://github.com/{{ .Owner }}/{{ .Task1 }})
+### 2. Positional Authority — [cat-compositional-placement](https://github.com/ObjectiveAI-claude-code-1/cat-compositional-placement)
 
 Where in the frame is the cat located, and does that placement feel commanding? The human eye is naturally drawn to certain areas of an image — the center carries inherent weight, and the rule-of-thirds intersections are natural resting points for the gaze.
 
 Positional authority rewards cats placed at or near these strong focal points, where their presence feels deliberate and intentional. It penalizes cats pushed to the far edges, buried in corners, or crowded against the margins — positions that suggest the cat was caught incidentally rather than framed as the subject.
 
-### 3. Visual Isolation — [{{ .Task2 }}](https://github.com/{{ .Owner }}/{{ .Task2 }})
+### 3. Visual Isolation — [cat-background-separation](https://github.com/ObjectiveAI-claude-code-1/cat-background-separation)
 
 How cleanly does the cat stand apart from its surroundings? Even a large, centrally positioned cat can lose dominance if the background is so visually noisy that the eye bounces restlessly between the cat and everything else in the scene.
 

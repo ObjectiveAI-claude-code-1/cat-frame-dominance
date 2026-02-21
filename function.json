@@ -1,16 +1,11 @@
 {
   "type": "scalar.function",
-  "input_schema": {
-    "type": "image",
-    "description": "A cat picture to evaluate for frame dominance."
-  },
   "tasks": [
     {
-      "type": "placeholder.scalar.function",
-      "input_schema": {
-        "type": "image",
-        "description": "A cat picture to evaluate for proportional presence — how much of the frame the cat occupies while appearing whole and complete."
-      },
+      "type": "scalar.function",
+      "owner": "ObjectiveAI-claude-code-1",
+      "repository": "cat-visual-presence",
+      "commit": "1ba5657a2715a8e90d3d4d45cf6a14b3d8f8ba5a",
       "skip": null,
       "input": {
         "$jmespath": "input"
@@ -20,11 +15,10 @@
       }
     },
     {
-      "type": "placeholder.scalar.function",
-      "input_schema": {
-        "type": "image",
-        "description": "A cat picture to evaluate for positional authority — whether the cat's placement within the frame communicates visual importance."
-      },
+      "type": "scalar.function",
+      "owner": "ObjectiveAI-claude-code-1",
+      "repository": "cat-compositional-placement",
+      "commit": "5b8bd203e5017fc70799b1cc4253ae73b2a974c5",
       "skip": null,
       "input": {
         "$jmespath": "input"
@@ -34,11 +28,10 @@
       }
     },
     {
-      "type": "placeholder.scalar.function",
-      "input_schema": {
-        "type": "image",
-        "description": "A cat picture to evaluate for visual isolation — how cleanly the cat separates from its background and how free the frame is from competing visual elements."
-      },
+      "type": "scalar.function",
+      "owner": "ObjectiveAI-claude-code-1",
+      "repository": "cat-background-separation",
+      "commit": "4674350bc3a9b008c596ae9ac73d2b2390441cdb",
       "skip": null,
       "input": {
         "$jmespath": "input"
@@ -48,5 +41,9 @@
       }
     }
   ],
-  "description": "Evaluates how much a cat commands the visual space of a photograph by assessing its proportional presence within the frame, positional authority relative to compositional focal points, and visual isolation from competing background elements. Returns a score from 0 to 1 answering: is this picture actually about the cat?"
+  "description": "Evaluates how much a cat commands the visual space of a photograph by assessing its proportional presence within the frame, positional authority relative to compositional focal points, and visual isolation from competing background elements. Returns a score from 0 to 1 answering: is this picture actually about the cat?",
+  "input_schema": {
+    "type": "image",
+    "description": "A cat picture to evaluate for frame dominance."
+  }
 }
