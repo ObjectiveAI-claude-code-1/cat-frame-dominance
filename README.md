@@ -1,49 +1,49 @@
 # cat-frame-dominance
 
-Evaluates how thoroughly a cat dominates the frame of a single photograph, returning a scalar score between 0 and 1 that measures the cat's visual sovereignty over the image. This function answers the foundational question every cat picture must face: **is this picture actually about the cat?**
+Evaluates the frame dominance of a single cat picture — a measure of how completely the cat commands the physical space of the image. This function answers one foundational question: **is this picture actually about the cat?**
 
-A score near **1** means the cat is the undeniable ruler of the frame — large, prominently placed, and standing apart from a clean background. A score near **0** means the cat is lost — small, marginalized, or buried in visual clutter.
+A cat may be technically present in a photograph and yet not be what the photograph is *about*. A small tabby on a distant windowsill, a calico half-hidden behind a stack of books — these are images that contain cats, but the cats do not own them. Frame dominance measures the degree to which a cat has risen above incidental status and claimed the image as its own, such that the viewer's eye goes to it first, stays on it longest, and finds no serious competition for attention.
 
 ## Input
 
 The function accepts a single **image** — a cat picture to evaluate for frame dominance.
 
-The universe of valid inputs is broad: professional studio portraits, hasty smartphone snapshots, distant landscapes where a cat appears on a fence post, or chaotic living room scenes where a cat is curled up among pillows and books. The function evaluates all of them with consistency, measuring not the cat in isolation but the relationship between the cat and everything else in the composition.
-
 ## Output
 
-A **scalar number between 0 and 1**, where:
+A **scalar score between 0 and 1**.
 
-- **1.0** — The cat completely dominates the frame. It fills the image, commands a powerful position, and the background offers no competing distractions.
-- **0.75** — The cat is clearly the subject. It is prominent in size, well-positioned, and reasonably isolated, though minor imperfections exist.
-- **0.5** — The cat is present but does not fully command the frame. It may be moderately sized, slightly off-center, or competing with some background clutter.
-- **0.25** — The cat struggles to hold attention. It is small, poorly positioned, or lost in a busy environment.
-- **0.0** — The cat is virtually invisible — a tiny speck in a vast scene, pushed to the extreme margins, or completely overwhelmed by its surroundings.
+| Score Range | Interpretation |
+|---|---|
+| **0.8 – 1.0** | The cat is the undeniable focal point. It fills the frame with visual authority, sits prominently within the composition, and stands against a background that does nothing to challenge its primacy. |
+| **0.5 – 0.8** | The cat is clearly the subject but with some compromise — moderate size, slightly off-center positioning, or mild background competition. |
+| **0.2 – 0.5** | The cat is present but not dominant. It may be small, partially obscured, competing with clutter, or positioned at the margins. |
+| **0.0 – 0.2** | The cat is marginal — tiny within a vast scene, heavily obscured, lost in clutter, or barely distinguishable from its surroundings. |
 
 ## What It Evaluates
 
-Frame dominance is not a single property. It emerges from the interplay of **three distinct qualities**, each evaluated independently by a dedicated sub-function and then synthesized into the final score.
+Frame dominance is not a single, monolithic property. It emerges from the interplay of three distinct qualities, each evaluated by a dedicated sub-function:
 
-### 1. Proportional Presence — [cat-wholeness-coverage](https://github.com/ObjectiveAI-claude-code-1/cat-wholeness-coverage)
+### 1. Proportional Presence — [{{ .Task0 }}](https://github.com/{{ .Owner }}/{{ .Task0 }})
 
-How much of the image's total area the cat occupies, and whether that occupation feels **substantial and complete**. A cat filling most of the frame scores highly; a cat reduced to a tiny speck scores low. Crucially, this quality accounts for wholeness — a cat so aggressively cropped that it feels fragmented is penalized, because true proportional presence means the cat is both large *and* intact within the frame.
+How much of the frame the cat physically occupies relative to the total space available. A cat whose body fills a generous portion of the photograph carries inherent visual weight that is difficult to ignore. However, proportional presence is not simply about maximizing size. A close-up that crops the cat so aggressively that it clips away ears, paws, or half the body may technically fill the frame yet leave the viewer feeling the subject is incomplete. The ideal is a cat that appears both large *and* complete — generously sized within the boundaries of the image while still feeling fully contained.
 
-### 2. Positional Authority — [cat-compositional-authority](https://github.com/ObjectiveAI-claude-code-1/cat-compositional-authority)
+### 2. Positional Authority — [{{ .Task1 }}](https://github.com/{{ .Owner }}/{{ .Task1 }})
 
-Where the cat is located within the frame and whether that placement conveys **visual importance and compositional intention**. The center of a frame is a position of natural power; the rule-of-thirds intersections are positions of dynamic emphasis. A cat placed at these compositional focal points radiates authority. A cat pushed to the extreme edges or corners — as if barely caught before it walked out of the shot — feels marginalized and accidental.
+Where the cat sits relative to the natural focal points of the image — the center, the rule-of-thirds intersections, and the overall visual stage of the composition. A cat positioned at or near these points of natural visual gravity benefits from the geometry of human attention. A cat pushed to the far edges or corners of the frame, no matter how large, can feel like it is about to exit the scene rather than commanding it. A cat in the heart of the image radiates intentionality and ownership.
 
-### 3. Subject Isolation — [cat-background-clarity](https://github.com/ObjectiveAI-claude-code-1/cat-background-clarity)
+### 3. Visual Clarity — [{{ .Task2 }}](https://github.com/{{ .Owner }}/{{ .Task2 }})
 
-How cleanly the cat separates from its surroundings and how free the image is from **competing visual elements**. A cat photographed against a smooth, uncluttered background achieves high isolation — there is nothing else for the eye to latch onto. A cat surrounded by patterned furniture, scattered objects, and bright competing colors must fight for attention. Subject isolation is what transforms a picture that *contains* a cat into a picture that is *about* a cat.
+How cleanly the cat separates from its surroundings as the unambiguous subject. A cat photographed against a simple, uncluttered background benefits from having nothing else that pulls the viewer's eye away. A cat surrounded by clutter, busy patterns, or competing objects loses authority as the viewer's attention fragments. Visual clarity also encompasses how distinguishable the cat is from its background — a cat that blends into its surroundings through similar color, low contrast, or camouflage is harder to perceive as a distinct subject, even if it is large and well-positioned.
+
+## Key Principles
+
+- **Frame dominance is not simply about size.** A cat photographed from across a room may still dominate the frame if it is centrally positioned against an uncluttered background.
+- **Completeness matters.** A close-up that clips half the cat out of frame may feel less dominant because the subject appears incomplete.
+- **All three qualities must converge.** A cat that is large but shoved into a corner lacks positional authority. A cat that is centered but tiny lacks proportional presence. A cat that is large and centered but lost in visual clutter lacks clarity. True frame dominance requires all three.
 
 ## Use Cases
 
-- **Content curation** — Filter cat pictures for galleries, feeds, or featured content by selecting images where the cat communicates its subject instantly, making them ideal for hero images and thumbnails.
-- **Quality assessment** — Provide photographers a first-pass filter to quickly identify shots where the cat is clearly and prominently captured versus images where it is partially out of frame, obscured, or competing with distractions.
-- **Prerequisite gating** — Act as a gatekeeper for downstream analysis systems that evaluate expression, pose, breed, or emotional tone — ensuring the cat is sufficiently visible and prominent before deeper evaluation begins.
-
-## Philosophy
-
-Frame dominance is not a measure of cuteness, mood, or photographic artistry. It is something more fundamental: a measure of **visual sovereignty**. Before we can evaluate anything else about a cat picture — its emotional resonance, its humor, its aesthetic beauty — we must first establish that the picture succeeds at being a picture of a cat. This function provides that bedrock assessment.
-
-A cat that scores highly across all three qualities fills the frame with its body, commands its position with compositional confidence, and stands apart from an undistracting background. Such a cat is not merely *in* the picture. It *is* the picture.
+- **Content curation** — Surface cat images where the cat is truly the star, filtering out those where it plays a bit part in someone else's scene.
+- **Content moderation** — Enforce a measurable threshold ensuring that images labeled as "cat pictures" actually deliver a cat-forward experience.
+- **Compositional feedback** — Provide photographers with a signal indicating whether their intended subject is getting lost in the noise of its surroundings.
+- **Visual attention research** — Quantify subject prominence in a structured, repeatable way across large datasets of cat imagery.
