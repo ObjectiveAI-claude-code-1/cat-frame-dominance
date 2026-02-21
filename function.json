@@ -1,16 +1,11 @@
 {
   "type": "scalar.function",
-  "input_schema": {
-    "type": "image",
-    "description": "A cat picture to evaluate for frame dominance."
-  },
   "tasks": [
     {
-      "type": "placeholder.scalar.function",
-      "input_schema": {
-        "type": "image",
-        "description": "A cat picture to evaluate for proportional presence — how much of the frame the cat physically occupies."
-      },
+      "type": "scalar.function",
+      "owner": "ObjectiveAI-claude-code-1",
+      "repository": "cat-proportional-presence",
+      "commit": "03ee555a0118f17821779f54f38e3cae54c8a6b1",
       "skip": null,
       "input": {
         "$jmespath": "input"
@@ -20,11 +15,10 @@
       }
     },
     {
-      "type": "placeholder.scalar.function",
-      "input_schema": {
-        "type": "image",
-        "description": "A cat picture to evaluate for positional authority — whether the cat’s placement within the frame feels prominent and commanding."
-      },
+      "type": "scalar.function",
+      "owner": "ObjectiveAI-claude-code-1",
+      "repository": "cat-positional-authority",
+      "commit": "267bc7013002d9643e30e3b6548e0db36392a148",
       "skip": null,
       "input": {
         "$jmespath": "input"
@@ -34,11 +28,10 @@
       }
     },
     {
-      "type": "placeholder.scalar.function",
-      "input_schema": {
-        "type": "image",
-        "description": "A cat picture to evaluate for environmental clarity — whether the surrounding space defers to the cat or competes with it."
-      },
+      "type": "scalar.function",
+      "owner": "ObjectiveAI-claude-code-1",
+      "repository": "cat-environment-clarity",
+      "commit": "f449a9299a6dda39b2ad71141ed32f7afc5b6c12",
       "skip": null,
       "input": {
         "$jmespath": "input"
@@ -48,5 +41,9 @@
       }
     }
   ],
-  "description": "Scores how much a cat dominates the visual frame of a photograph (0 to 1) by evaluating three qualities: proportional presence, positional authority, and environmental clarity. Answers the question: is this picture truly about the cat, or is the cat just incidental?"
+  "description": "Scores how much a cat dominates the visual frame of a photograph (0 to 1) by evaluating three qualities: proportional presence, positional authority, and environmental clarity. Answers the question: is this picture truly about the cat, or is the cat just incidental?",
+  "input_schema": {
+    "type": "image",
+    "description": "A cat picture to evaluate for frame dominance."
+  }
 }

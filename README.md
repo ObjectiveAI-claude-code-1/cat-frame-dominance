@@ -28,7 +28,7 @@ How much physical space does the cat occupy within the boundaries of the image? 
 - **Scores high:** A cat whose body, face, and posture are legible and take up meaningful room.
 - **Scores low:** A tiny, distant, or barely visible cat that requires effort to find.
 
-> Sub-function: [{{ .Task0 }}](https://github.com/{{ .Owner }}/{{ .Task0 }})
+> Sub-function: [cat-proportional-presence](https://github.com/ObjectiveAI-claude-code-1/cat-proportional-presence)
 
 ### 2. Positional Authority
 
@@ -37,7 +37,7 @@ Where does the cat sit within the compositional geometry of the frame? A cat pos
 - **Scores high:** A cat whose position creates compositional gravity, as though the image was framed around it.
 - **Scores low:** A cat pushed to the periphery, tucked into a corner, or placed in a way that feels accidental.
 
-> Sub-function: [{{ .Task1 }}](https://github.com/{{ .Owner }}/{{ .Task1 }})
+> Sub-function: [cat-positional-authority](https://github.com/ObjectiveAI-claude-code-1/cat-positional-authority)
 
 ### 3. Environmental Clarity
 
@@ -46,7 +46,7 @@ Does the space surrounding the cat defer to it, or compete with it? Even a large
 - **Scores high:** A clean, calm background where everything that is not the cat quietly steps aside.
 - **Scores low:** A busy, cluttered environment where the cat must fight for the viewer's attention.
 
-> Sub-function: [{{ .Task2 }}](https://github.com/{{ .Owner }}/{{ .Task2 }})
+> Sub-function: [cat-environment-clarity](https://github.com/ObjectiveAI-claude-code-1/cat-environment-clarity)
 
 ## Use-Cases
 
