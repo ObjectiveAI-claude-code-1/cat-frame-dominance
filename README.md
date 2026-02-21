@@ -24,15 +24,15 @@ A **scalar number between 0 and 1**, where:
 
 Frame dominance is not a single property. It emerges from the interplay of **three distinct qualities**, each evaluated independently by a dedicated sub-function and then synthesized into the final score.
 
-### 1. Proportional Presence — [{{ .Task0 }}](https://github.com/{{ .Owner }}/{{ .Task0 }})
+### 1. Proportional Presence — [cat-wholeness-coverage](https://github.com/ObjectiveAI-claude-code-1/cat-wholeness-coverage)
 
 How much of the image's total area the cat occupies, and whether that occupation feels **substantial and complete**. A cat filling most of the frame scores highly; a cat reduced to a tiny speck scores low. Crucially, this quality accounts for wholeness — a cat so aggressively cropped that it feels fragmented is penalized, because true proportional presence means the cat is both large *and* intact within the frame.
 
-### 2. Positional Authority — [{{ .Task1 }}](https://github.com/{{ .Owner }}/{{ .Task1 }})
+### 2. Positional Authority — [cat-compositional-authority](https://github.com/ObjectiveAI-claude-code-1/cat-compositional-authority)
 
 Where the cat is located within the frame and whether that placement conveys **visual importance and compositional intention**. The center of a frame is a position of natural power; the rule-of-thirds intersections are positions of dynamic emphasis. A cat placed at these compositional focal points radiates authority. A cat pushed to the extreme edges or corners — as if barely caught before it walked out of the shot — feels marginalized and accidental.
 
-### 3. Subject Isolation — [{{ .Task2 }}](https://github.com/{{ .Owner }}/{{ .Task2 }})
+### 3. Subject Isolation — [cat-background-clarity](https://github.com/ObjectiveAI-claude-code-1/cat-background-clarity)
 
 How cleanly the cat separates from its surroundings and how free the image is from **competing visual elements**. A cat photographed against a smooth, uncluttered background achieves high isolation — there is nothing else for the eye to latch onto. A cat surrounded by patterned furniture, scattered objects, and bright competing colors must fight for attention. Subject isolation is what transforms a picture that *contains* a cat into a picture that is *about* a cat.
 
