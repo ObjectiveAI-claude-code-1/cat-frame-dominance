@@ -1,16 +1,11 @@
 {
   "type": "scalar.function",
-  "input_schema": {
-    "type": "image",
-    "description": "A cat picture to evaluate for frame dominance."
-  },
   "tasks": [
     {
-      "type": "placeholder.scalar.function",
-      "input_schema": {
-        "type": "image",
-        "description": "A cat picture to evaluate for proportional presence within the frame."
-      },
+      "type": "scalar.function",
+      "owner": "ObjectiveAI-claude-code-1",
+      "repository": "cat-visual-fill",
+      "commit": "469f20be56364159770510c7690e19649c597d86",
       "skip": null,
       "input": {
         "$jmespath": "input"
@@ -20,11 +15,10 @@
       }
     },
     {
-      "type": "placeholder.scalar.function",
-      "input_schema": {
-        "type": "image",
-        "description": "A cat picture to evaluate for positional authority within the frame."
-      },
+      "type": "scalar.function",
+      "owner": "ObjectiveAI-claude-code-1",
+      "repository": "cat-compositional-gravity",
+      "commit": "1602bb6553830f3475d0350035907b61ece3bd6f",
       "skip": null,
       "input": {
         "$jmespath": "input"
@@ -34,11 +28,10 @@
       }
     },
     {
-      "type": "placeholder.scalar.function",
-      "input_schema": {
-        "type": "image",
-        "description": "A cat picture to evaluate for visual clarity as the unambiguous subject."
-      },
+      "type": "scalar.function",
+      "owner": "ObjectiveAI-claude-code-1",
+      "repository": "cat-focal-clarity",
+      "commit": "57253296331af68c842527ac496a457eac3ddcc0",
       "skip": null,
       "input": {
         "$jmespath": "input"
@@ -48,5 +41,9 @@
       }
     }
   ],
-  "description": "Evaluates how completely a cat commands the physical space of a photograph. Scores three qualities — proportional presence, positional authority, and visual clarity — to answer one question: is this picture actually about the cat? Returns a score from 0 (marginal, obscured, peripheral) to 1 (undeniable focal point)."
+  "description": "Evaluates how completely a cat commands the physical space of a photograph. Scores three qualities — proportional presence, positional authority, and visual clarity — to answer one question: is this picture actually about the cat? Returns a score from 0 (marginal, obscured, peripheral) to 1 (undeniable focal point).",
+  "input_schema": {
+    "type": "image",
+    "description": "A cat picture to evaluate for frame dominance."
+  }
 }

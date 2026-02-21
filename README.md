@@ -23,15 +23,15 @@ A **scalar score between 0 and 1**.
 
 Frame dominance is not a single, monolithic property. It emerges from the interplay of three distinct qualities, each evaluated by a dedicated sub-function:
 
-### 1. Proportional Presence — [{{ .Task0 }}](https://github.com/{{ .Owner }}/{{ .Task0 }})
+### 1. Proportional Presence — [cat-visual-fill](https://github.com/ObjectiveAI-claude-code-1/cat-visual-fill)
 
 How much of the frame the cat physically occupies relative to the total space available. A cat whose body fills a generous portion of the photograph carries inherent visual weight that is difficult to ignore. However, proportional presence is not simply about maximizing size. A close-up that crops the cat so aggressively that it clips away ears, paws, or half the body may technically fill the frame yet leave the viewer feeling the subject is incomplete. The ideal is a cat that appears both large *and* complete — generously sized within the boundaries of the image while still feeling fully contained.
 
-### 2. Positional Authority — [{{ .Task1 }}](https://github.com/{{ .Owner }}/{{ .Task1 }})
+### 2. Positional Authority — [cat-compositional-gravity](https://github.com/ObjectiveAI-claude-code-1/cat-compositional-gravity)
 
 Where the cat sits relative to the natural focal points of the image — the center, the rule-of-thirds intersections, and the overall visual stage of the composition. A cat positioned at or near these points of natural visual gravity benefits from the geometry of human attention. A cat pushed to the far edges or corners of the frame, no matter how large, can feel like it is about to exit the scene rather than commanding it. A cat in the heart of the image radiates intentionality and ownership.
 
-### 3. Visual Clarity — [{{ .Task2 }}](https://github.com/{{ .Owner }}/{{ .Task2 }})
+### 3. Visual Clarity — [cat-focal-clarity](https://github.com/ObjectiveAI-claude-code-1/cat-focal-clarity)
 
 How cleanly the cat separates from its surroundings as the unambiguous subject. A cat photographed against a simple, uncluttered background benefits from having nothing else that pulls the viewer's eye away. A cat surrounded by clutter, busy patterns, or competing objects loses authority as the viewer's attention fragments. Visual clarity also encompasses how distinguishable the cat is from its background — a cat that blends into its surroundings through similar color, low contrast, or camouflage is harder to perceive as a distinct subject, even if it is large and well-positioned.
 
