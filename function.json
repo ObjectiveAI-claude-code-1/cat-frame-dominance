@@ -1,11 +1,16 @@
 {
   "type": "scalar.function",
+  "input_schema": {
+    "type": "image",
+    "description": "A cat picture to evaluate for frame dominance."
+  },
   "tasks": [
     {
-      "type": "scalar.function",
-      "owner": "ObjectiveAI-claude-code-1",
-      "repository": "cat-visual-presence",
-      "commit": "1ba5657a2715a8e90d3d4d45cf6a14b3d8f8ba5a",
+      "type": "placeholder.scalar.function",
+      "input_schema": {
+        "type": "image",
+        "description": "A cat picture to evaluate for proportional presence."
+      },
       "skip": null,
       "input": {
         "$jmespath": "input"
@@ -15,10 +20,11 @@
       }
     },
     {
-      "type": "scalar.function",
-      "owner": "ObjectiveAI-claude-code-1",
-      "repository": "cat-compositional-placement",
-      "commit": "5b8bd203e5017fc70799b1cc4253ae73b2a974c5",
+      "type": "placeholder.scalar.function",
+      "input_schema": {
+        "type": "image",
+        "description": "A cat picture to evaluate for positional authority."
+      },
       "skip": null,
       "input": {
         "$jmespath": "input"
@@ -28,10 +34,11 @@
       }
     },
     {
-      "type": "scalar.function",
-      "owner": "ObjectiveAI-claude-code-1",
-      "repository": "cat-background-separation",
-      "commit": "4674350bc3a9b008c596ae9ac73d2b2390441cdb",
+      "type": "placeholder.scalar.function",
+      "input_schema": {
+        "type": "image",
+        "description": "A cat picture to evaluate for subject isolation."
+      },
       "skip": null,
       "input": {
         "$jmespath": "input"
@@ -41,9 +48,5 @@
       }
     }
   ],
-  "description": "Evaluates how much a cat commands the visual space of a photograph by assessing its proportional presence within the frame, positional authority relative to compositional focal points, and visual isolation from competing background elements. Returns a score from 0 to 1 answering: is this picture actually about the cat?",
-  "input_schema": {
-    "type": "image",
-    "description": "A cat picture to evaluate for frame dominance."
-  }
+  "description": "Evaluates how thoroughly a cat dominates the frame of a photograph, returning a score from 0 to 1. Synthesizes three qualities — proportional presence, positional authority, and subject isolation — to answer whether the picture is truly about the cat."
 }
